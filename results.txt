@@ -1,0 +1,28 @@
+Testing priority queue class: NoPQ
+NoPQ FAIL: Unable to construct instance of NoPQ
+   0 TOTAL TESTS RUN
+Testing priority queue class: PQ01
+FAILED test08insertNullException: null cannot be inserted
+   9 PASSED
+   1 FAILED
+  10 TOTAL TESTS RUN
+Testing priority queue class: PQ02
+FAILED test00isEmpty: unexpectedly threw java.lang.NullPointerException
+FAILED test04insertRemoveMany: unexpectedly threw java.lang.ArrayIndexOutOfBoundsException
+FAILED test06manyDataItem: unexpectedly threw java.lang.ArrayIndexOutOfBoundsException
+FAILED test08insertNullException: null cannot be inserted
+   6 PASSED
+   4 FAILED
+  10 TOTAL TESTS RUN
+Testing priority queue class: PQ03
+FAILED test03insertRemoveOne: inserted item fails the same value as removeMax on newly constructed PQ
+FAILED test04insertRemoveMany: removeMax does not return the max values in the priority order
+FAILED test05duplicatesAllowed: unexpectedly threw java.lang.NullPointerException
+FAILED test07getMaxOne: getMax fails the same value as inserted priority queue
+FAILED test08insertNullException: unexpectedly threw java.lang.IllegalArgumentException
+   5 PASSED
+   5 FAILED
+  10 TOTAL TESTS RUN
+Testing priority queue class: MyPQ
+MyPQ FAIL: Unable to construct instance of MyPQ
+   0 TOTAL TESTS RUN
