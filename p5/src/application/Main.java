@@ -356,7 +356,7 @@ public class Main extends Application {
 				Scene secondScene = new Scene(secondaryLayout, 200, 100);
 
 				Stage secondStage = new Stage();
-				secondStage.setTitle("Total nutritions");
+				secondStage.setTitle("Total Nutrition");
 				secondStage.setScene(secondScene);
 
 				secondStage.show();
@@ -374,7 +374,7 @@ public class Main extends Application {
 			nameLabel.setLayoutY(filterY);
 
 			final TextField nameBox = new TextField();
-			nameBox.setPromptText("name");
+			nameBox.setPromptText("Food Name");
 			nameBox.setMaxWidth(foodNameCol.getPrefWidth());
 			nameBox.setLayoutX(filterX + 70);
 			nameBox.setLayoutY(filterY - 5);
@@ -388,13 +388,13 @@ public class Main extends Application {
 			calLabel1.setLayoutY(filterY + 30);
 
 			final TextField mincal = new TextField();
-			mincal.setPromptText("minimun");
+			mincal.setPromptText("Minimum");
 			mincal.setMaxWidth(foodNameCol.getPrefWidth());
 			mincal.setLayoutX(filterX + 70);
 			mincal.setLayoutY(filterY + 25);
 
 			final TextField maxcal = new TextField();
-			maxcal.setPromptText("maximun");
+			maxcal.setPromptText("Maximum");
 			maxcal.setMaxWidth(foodNameCol.getPrefWidth());
 			maxcal.setLayoutX(filterX + 170);
 			maxcal.setLayoutY(filterY + 25);
@@ -408,13 +408,13 @@ public class Main extends Application {
 			proteinLabel1.setLayoutY(filterY + 60);
 
 			final TextField minprotein = new TextField();
-			minprotein.setPromptText("minimun");
+			minprotein.setPromptText("Minimum");
 			minprotein.setMaxWidth(foodNameCol.getPrefWidth());
 			minprotein.setLayoutX(filterX + 70);
 			minprotein.setLayoutY(filterY + 55);
 
 			final TextField maxprotein = new TextField();
-			maxprotein.setPromptText("maximun");
+			maxprotein.setPromptText("Maximum");
 			maxprotein.setMaxWidth(foodNameCol.getPrefWidth());
 			maxprotein.setLayoutX(filterX + 170);
 			maxprotein.setLayoutY(filterY + 55);
@@ -428,13 +428,13 @@ public class Main extends Application {
 			fiberLabel1.setLayoutY(filterY + 90);
 
 			final TextField minfiber = new TextField();
-			minfiber.setPromptText("minimun");
+			minfiber.setPromptText("Minimum");
 			minfiber.setMaxWidth(foodNameCol.getPrefWidth());
 			minfiber.setLayoutX(filterX + 70);
 			minfiber.setLayoutY(filterY + 85);
 
 			final TextField maxfiber = new TextField();
-			maxfiber.setPromptText("maximun");
+			maxfiber.setPromptText("Maximum");
 			maxfiber.setMaxWidth(foodNameCol.getPrefWidth());
 			maxfiber.setLayoutX(filterX + 170);
 			maxfiber.setLayoutY(filterY + 85);
@@ -448,13 +448,13 @@ public class Main extends Application {
 			fatLabel1.setLayoutY(filterY + 120);
 
 			final TextField minfat = new TextField();
-			minfat.setPromptText("minimun");
+			minfat.setPromptText("Minimum");
 			minfat.setMaxWidth(foodNameCol.getPrefWidth());
 			minfat.setLayoutX(filterX + 70);
 			minfat.setLayoutY(filterY + 115);
 
 			final TextField maxfat = new TextField();
-			maxfat.setPromptText("maximun");
+			maxfat.setPromptText("Maximum");
 			maxfat.setMaxWidth(foodNameCol.getPrefWidth());
 			maxfat.setLayoutX(filterX + 170);
 			maxfat.setLayoutY(filterY + 115);
@@ -468,13 +468,13 @@ public class Main extends Application {
 			carbsLabel1.setLayoutY(filterY + 150);
 
 			final TextField mincarbs = new TextField();
-			mincarbs.setPromptText("minimun");
+			mincarbs.setPromptText("Minimum");
 			mincarbs.setMaxWidth(foodNameCol.getPrefWidth());
 			mincarbs.setLayoutX(filterX + 70);
 			mincarbs.setLayoutY(filterY + 145);
 
 			final TextField maxcarbs = new TextField();
-			maxcarbs.setPromptText("maximun");
+			maxcarbs.setPromptText("Maximum");
 			maxcarbs.setMaxWidth(foodNameCol.getPrefWidth());
 			maxcarbs.setLayoutX(filterX + 170);
 			maxcarbs.setLayoutY(filterY + 145);
@@ -499,7 +499,7 @@ public class Main extends Application {
 				List<String> RulesList = new ArrayList<String>();
 				List<FoodItem> filteredNameList = new ArrayList<FoodItem>();
 				System.out.println(RulesList);
-				Alert a = new Alert(AlertType.WARNING, "Please enter positive valeue");
+				Alert a = new Alert(AlertType.WARNING, "Please enter positive value");
 				///
 				if (!nameBox.getText().trim().isEmpty()) {
 
@@ -712,7 +712,7 @@ public class Main extends Application {
 
 			/*
 			 * add all the vbox together , set it to scene : food list table, meal list,
-			 * food list label, meal list lable,
+			 * food list label, meal list label,
 			 */
 
 			VBox vb3 = new VBox();

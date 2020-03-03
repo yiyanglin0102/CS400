@@ -3,18 +3,18 @@ run:
 	jar -cMf food.zip .
 
 
-nosrc:  Main.java
-	javac -d . *.java
+nosrc: application/Main.java
+	javac -d . application/*.java
 	jar -cfm executable.jar manifest.txt application
 
 
-srcbin: Main.java
-	javac -d bin *.java
+srcbin: src/application/Main.java
+	javac -d bin src/application/*.java
 	jar -cfm executable.jar manifest_srcbin.txt -C bin application
 
 clean:
-	rm application/*.class
+	\rm application/*.class	
 
 
 cleanbin:
-	rm bin/application/*.class
+	\rm bin/application/*.class
